@@ -1,0 +1,274 @@
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    height: 100vh;
+    box-sizing: border-box;
+    
+}
+
+#v3d-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    display: none;
+    z-index: 1;
+}
+
+.v3d-simple-preloader-logo {
+    background-image: url("png.png");
+    background-size: contain;
+}
+
+.fullscreen-open {
+    background-image: url('media/fullscreen_open.svg');
+}
+
+.fullscreen-close {
+    background-image: url('media/fullscreen_close.svg');
+}
+
+/* removes tap blinking on ios devices */
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+/* 移动设备 */
+.UI {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #dee2e6;
+    background-color: #ffffff7c;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.controller {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 95%;
+    
+}
+.UI label {
+    padding: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: #606266;
+}
+
+.slid {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+/* 非移动设备*/
+@media screen and (min-width:300px) {
+    .UI {
+        left: 60%;
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+    .slid {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .UI {
+        left: 70%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .UI {
+        left: 80%;
+    }
+}
+
+.menu {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 32px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(33, 37, 41);
+}
+
+.btn {
+    height: 48px;
+    min-height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #606266;
+    background: #cecdcd;
+    border: 1px solid #dcdfe6;
+    white-space: nowrap;
+    cursor: not-allowed;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: 500;
+    display: inline-block;
+    outline: none;
+    -webkit-transition: .1s;
+    transition: .1s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.btn-primary {
+    width: 64px;
+    min-width: 64px;
+}
+
+
+.btn-active {
+    background: #409eff;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.description {
+    color: #606266;
+    font-size: 14px;
+    margin-top: auto;
+    padding: 10px;
+}
+
+#upload {
+    margin: 50px 10px 0px 10px;
+}
+
+#signName {
+    height: 48px;
+    margin: 10px;
+    padding: 0 10px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+/* 滑块样式*/
+.slider {
+    width: 100%;
+    margin-left: 6px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+}
+
+.slider::-webkit-slider-runnable-track {
+    background:#cecdcd;
+    height: 6px;
+    border-radius: 3px;
+
+}
+.slider::-moz-range-track {
+    background:#cecdcd;
+    height: 6px;
+    border-radius: 3px;
+
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #409eff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin-top: -6px;
+}
+
+.slider::-moz-range-thumb {
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #409eff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+div{
+    position: relative;
+    
+}
+#rangeValue{
+    position: absolute;
+    
+    right: -60px;
+    padding: 2px;
+    width: 50px;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+}
+#rangeValue::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+}
+.range{
+    width: 400px;
+    height: 8px;
+    
+    background: #111;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 2px;
+}
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00bcd4;
+}
+.pickr-div{
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;  
+}
+.pickr-div > p{
+    left: 0;
+    color: #606266;
+}
