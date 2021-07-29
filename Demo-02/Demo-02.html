@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Demo-02</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="jeff.chen">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="jeff.chen">
+  <meta name="twitter:title" content="jeff.chen">
+  <meta name="twitter:description" content="jeff.chen">
+  <meta name="twitter:image:src" content="jeff.chen">
+  <!-- Open Graph -->
+  <meta property="og:title" content="jeff.chen">
+  <meta property="og:description" content="jeff.chen">
+  <meta property="og:image" content="jeff.chen">
+  <meta property="og:type" content="website">
+
+  <meta name="generator" content="jeff.chen">
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="manifest" href="media/manifest.json">
+  <link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <script src="ie_compat.js"></script>
+
+  <script src="v3d.js"></script>
+  <script src="Demo-02.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="Demo-02.css">
+  <link rel="stylesheet" href="dist/themes/nano.min.css" />
+</head>
+body>
+  <div id="v3d-container">
+    <div id="fullscreen_button" class="fullscreen-button fullscreen-open" title="Toggle fullscreen mode"></div>
+    <div class="UI" id="uiBtn">
+      <a href="javascript:;" class="btn" id="upload">Upload</a>
+      <input type="text" id="signName" placeholder="TEXT">
+      <div class="pickr-div">
+        <p>color:: </p>
+        <div class="pickr-container"></div>
+      </div>
+      <div class="controller">
+        <label>Scale
+          <input type="range" class="slider" id="scale" value="1" min="0" max="2" step="0.1"
+            onchange="rangeSlider(this.value)">
+          <span id="scalee">1</span>
+
+          <script type="text/javascript">
+            function rangeSlider(value) {
+              document.getElementById('scalee').innerHTML = value;
+            }
+
+          </script>
+
+        </label>
+
+
+
+        <label>MoveX
+          <input type="range" class="slider" id="translateX" value="0" min="-1" max="1" step="0.1"
+            onchange="rangeSliderrr(this.value)">
+          <span id="translateXX">0</span>
+
+
+          <script type="text/javascript">
+            function rangeSliderrr(value) {
+              document.getElementById('translateXX').innerHTML = value;
+            }
+
+          </script>
+        </label>
+
+        <label>MoveY
+          <input type="range" class="slider" id="translateY" value="0" min="-1" max="1" step="0.1"
+            onchange="rangeSliderrrr(this.value)">
+          <span id="translateYY">0</span>
+
+
+          <script type="text/javascript">
+            function rangeSliderrrr(value) {
+              document.getElementById('translateYY').innerHTML = value;
+            }
+
+          </script>
+        </label>
+
+        <label>Rotate
+          <input type="range" class="slider" id="rotate" min="-3.14" max="3.14" step="0.01"
+            onchange="rangeSliderrrrr(this.value)">
+          <span id="rotatee">0</span>
+
+          <script type="text/javascript">
+            function rangeSliderrrrr(value) {
+              document.getElementById('rotatee').innerHTML = value;
+            }
+
+          </script>
+        </label>
+
+
+
+      </div>
+
+
+    </div>
+    <img src="media/menu.png" class="menu" alt="菜单">
+  </div>
+  <script src="dist/pickr.min.js"></script>
+</body>
+
+</html>
