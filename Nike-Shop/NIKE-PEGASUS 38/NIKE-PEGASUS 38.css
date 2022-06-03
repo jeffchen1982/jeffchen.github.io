@@ -1,0 +1,108 @@
+/* __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated */
+
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#v3d-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    display: none;
+    z-index: 1;
+}
+
+.v3d-simple-preloader-logo {
+    background-image: url("png.png");
+    background-size: contain;
+}
+
+.fullscreen-open {
+    background-image: url('media/fullscreen_open.svg');
+}
+
+.fullscreen-close {
+    background-image: url('media/fullscreen_close.svg');
+}
+
+/* removes tap blinking on ios devices */
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+.gwd-div-1v1j {
+    position: absolute;
+    left: 100%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    top: 50%;
+    height: 250px;
+    width: 100px;
+    transform: translate3d(-100px, -125px, 0px);
+    -webkit-transform: translate3d(-100px, -125px, 0px);
+    -moz-transform: translate3d(-100px, -125px, 0px);
+    filter: drop-shadow(rgb(169, 169, 169) 3px 3px 2px);
+    -webkit-filter: drop-shadow(rgb(169, 169, 169) 3px 3px 2px);
+}
+.gwd-img-1uuv {
+    position: absolute;
+    left: 38px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+}
+.gwd-img-18ri {
+    top: 0%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    left: 50%;
+    transform: translate3d(-35px, 0px, 0px);
+    -webkit-transform: translate3d(-35px, 0px, 0px);
+    -moz-transform: translate3d(-35px, 0px, 0px);
+}
+.gwd-img-77z7 {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    top: 100%;
+    left: 50%;
+    transform: translate3d(-35px, -70px, 0px);
+    -webkit-transform: translate3d(-35px, -70px, 0px);
+    -moz-transform: translate3d(-35px, -70px, 0px);
+}
+   @media only screen and (max-width: 600px ){
+    .gwd-div-1v1j{
+        position: absolute;
+    left: 100%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    top: 50%;
+    height: 200px;
+    width: 80px;
+    transform: translate3d(-100px, -125px, 0px);
+    -webkit-transform: translate3d(-100px, -125px, 0px);
+    -moz-transform: translate3d(-100px, -125px, 0px);
+    filter: drop-shadow(rgb(169, 169, 169) 3px 3px 2px);
+    -webkit-filter: drop-shadow(rgb(169, 169, 169) 3px 3px 2px);
+    }
+  .gwd-img-1uuv {
+    position: absolute;
+    left: 85px;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+}
+   }
