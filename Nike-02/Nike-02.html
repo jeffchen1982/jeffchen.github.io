@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- __V3D_PUZZLES__ - enable Puzzles button in the App Manager -->
+<!-- __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated -->
+<html lang="en">
+<head>
+  <title>Nike-Air Force1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="manifest" href="media/manifest.json">
+  <link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+
+  
+  <script src="v3d.js"></script>
+  <script src="Nike-02.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="Nike-02.css">
+</head>
+
+<body>
+  <div id="v3d-container">
+    <div id="fullscreen_button" class="fullscreen-button fullscreen-open" title="Toggle fullscreen mode"></div>
+    <div class="wrapper">
+      <nav>
+          <input type="radio" name="tab" id="kai" checked>
+          <input type="radio" name="tab" id="yellow" >
+          <input type="radio" name="tab" id="blue" >
+          <input type="radio" name="tab" id="green" >
+          <input type="radio" name="tab" id="red" >
+          <!-- 注释："for" 属性可把 label 绑定到另外一个元素。请把 "for"
+               属性的值设置为相关元素的 id 属性的值。 -->            
+          <label for="kai" class="kai">
+              <a href="#">
+                  <!-- <i class="fa fa-home" aria-hidden="true"></i> -->
+                  Yellow
+              </a>
+          </label>
+          <label for="yellow" class="yellow">
+              <a href="#">
+                  <!-- <i class="fa fa-comment" aria-hidden="true"></i> -->
+                  Ocen
+              </a>
+          </label>
+          <label for="blue" class="blue">
+              <a href="#">
+                  <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+                  Rose Red
+              </a>
+          </label>
+          <label for="green" class="green">
+              <a href="#">
+                  <!-- <i class="fa fa-heart" aria-hidden="true"></i> -->
+                  Rotate
+              </a>
+          </label>
+          <label for="red" class="red">
+              <a href="#">
+                  <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                  Stop Rotate
+              </a>
+          </label>
+          <div class="tab"></div>
+      </nav>
+  </div>
+  </div>
+</body>
+
+</html>
